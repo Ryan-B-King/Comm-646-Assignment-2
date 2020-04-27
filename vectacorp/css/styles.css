@@ -5,3 +5,13 @@
 .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
 .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
 
+#fieldset2 {
+    border: 0;
+}
+.label2 {
+    display: block;
+    margin: 30px 0 0 0;
+}
+.overflow {
+    height: 200px;
+}

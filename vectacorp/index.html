@@ -7,18 +7,21 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="/vectacorp/js/jquery-3.5.0.min.js"></script>
+	<script src="/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<script src="../jquery-ui-1.12.1/jquery-ui.theme.css"></script>
 	<script src="js/jquery.mobilemenu.js"></script>
-	<script>
-		$(document).ready(function(){
-			$('#responsive-menu').mobileMenu();
-		});
-	</script>
+	<script src='js/js.js'></script>
+
+
+
 </head>
 <body>
 	<main class="container">
@@ -28,11 +31,11 @@
 		
 		<nav class="thirteen columns">
 			<ul id="responsive-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="solutions.html">Solutions</a></li>
-				<li><a href="support.html">Support</a></li>
-				<li><a href="contactus.html">Contact Us</a></li>
+				<li title="Takes you to the Home Page"><a href="index.html">Home</a></li>
+				<li title="Find out more about our company."><a href="aboutus.html">About Us</a></li>
+				<li title="Vecta Corp. offers 3 solutions for prospecting, converting, and retaining customers."><a href="solutions.html">Solutions</a></li>
+				<li title="Need help? This page will assist with your issues."><a href="support.html">Support</a></li>
+				<li title="Need to reach out? You'll find our contact info here."><a href="contactus.html">Contact Us</a></li>
 			</ul>
 		</nav>
 		
@@ -50,12 +53,51 @@
 			<h4>Our Solutions</h4> 
 			
 			<!-- INSERT TABS HERE -->
+			<div id="tabs">
+				<ul>
+				  <li><a href="#tabs-1">vProspect 2.0</a></li>
+				  <li><a href="#tabs-2">vConvert 2.0</a></li>
+				  <li><a href="#tabs-3">vRetain 1.0</a></li>
+				</ul>
+				<div id="tabs-1">
+					<p>Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.</p>
+				</div>
+				<div id="tabs-2">
+					<p>Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.</p>
+				</div>
+				<div id="tabs-3">
+					<p>Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.</p>
+				</div>
+			  </div>
 		</section>
 		
 		<section id="testimonials" class="five columns">
 			<h4>Client Testimonials</h4>
 
 			<!-- INSERT ACCORDION HERE -->
+			<div id="accordion">
+				<h3>Testimonial 1</h3>
+				<div>
+				  <p>
+					Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially.</p>
+
+				  <p>Iona Ford<br>
+					 President<br>
+					 Chevy Dealers Association
+				  </p>
+				</div>
+				<h3>Testimonial 2</h3>
+				<div>
+				  <p>
+					Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them.</p>
+				
+				  <p>
+					Robin Banks<br>
+					CEO<br>
+					Profits Financial, Inc.
+				  </p>
+				</div>
+			  </div>
 		</section>
 	</main>
 </body>

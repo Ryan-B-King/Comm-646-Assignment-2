@@ -1,0 +1,24 @@
+{
+	// "undef": true,
+	"loopfunc": true,
+	"expr": true,
+	"eqeqeq": true,
+	"curly": true,
+	"indent": 4,
+	"globals": {
+	    "$": true,
+	    "angular": true,
+	    "jQuery": true,
+	    "window": true,
+	    "define": true,
+	    "require": true,
+	    "console": true,
+	    "setTimeout": true,
+	    "clearTimeout": true,
+	    "describe": true,
+	    "it": true,
+	    "expect": true,
+	    "require": true,
+	    "define": true
+	}
+}

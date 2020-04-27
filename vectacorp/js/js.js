@@ -24,4 +24,28 @@ $(function() {
     $('.cycle-slideshow img')
     .css('margin-bottom', '20px')
 
+    $(".nav-demo li").spotter({
+        menuListClass: "active",
+        contentList: ".content-wrapper li"
+      });
+
+    $('#fixedNav')
+    .css('position', 'fixed');
+
+      $(document).ready(function(){
+        $.topbutton({
+      
+          // any html content
+          // default: "Top"
+          html : "<i>Back to Top</i>",
+          
+          // CSS styles
+          // default: "null"
+          css : "width:100px; height:75px; background:#22b8cf; border:none; font-size:20px;",
+      
+          // default: 150
+          scrollSpeed : 300
+      
+        });
+      });
 });

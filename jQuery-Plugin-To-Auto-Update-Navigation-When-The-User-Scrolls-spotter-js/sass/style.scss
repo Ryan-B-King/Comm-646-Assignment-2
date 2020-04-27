@@ -1,0 +1,39 @@
+ul { list-style-type: none; }
+a {
+	color: white;
+	text-decoration: none;
+}
+.container {
+	width: 100%;
+	max-width: 960px;
+	min-width: 320px;
+}
+
+.nav-wrapper-a, .nav-wrapper-b {
+	width: 90px;
+	position: fixed;  top: 0;
+	opacity: 0.9;
+	li {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		background-color: darkgray;
+		margin-top: 1px;   padding: 10px;
+		color: white;
+		&.active { background-color: red; }
+	}
+}
+.nav-wrapper-b { left: 110px; }
+
+.content-wrapper-a, .content-wrapper-b {
+	width: 100%;
+
+	li h2 {  border-top: 1px solid darkgray;  }
+
+	/* For content that has set width and height*/
+	&.overflow {
+		overflow-y: scroll;
+		height: 400px;
+	}
+}
+

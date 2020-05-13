@@ -172,6 +172,10 @@ jQuery.fn = jQuery.prototype = {
 	splice: deletedIds.splice
 };
 
+	jQuery.htmlPrefilter = function( html ) {
+	return html;
+};
+	
 jQuery.extend = jQuery.fn.extend = function() {
 	var src, copyIsArray, copy, name, options, clone,
 		target = arguments[ 0 ] || {},
